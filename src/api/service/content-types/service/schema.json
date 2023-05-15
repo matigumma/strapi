@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "schools",
+  "collectionName": "services",
   "info": {
-    "singularName": "school",
-    "pluralName": "schools",
-    "displayName": "School",
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
     "description": ""
   },
   "options": {
@@ -15,10 +15,13 @@
     "name": {
       "type": "string"
     },
-    "owner_id": {
+    "description": {
+      "type": "richtext"
+    },
+    "school_id": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "target": "api::school.school"
     }
   }
 }

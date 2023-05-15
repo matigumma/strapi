@@ -70,12 +70,6 @@
     },
     "firebase_uid": {
       "type": "string"
-    },
-    "schools": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::school.school",
-      "mappedBy": "owner_id"
     }
   }
 }

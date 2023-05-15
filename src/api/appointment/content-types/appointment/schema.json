@@ -4,7 +4,8 @@
   "info": {
     "singularName": "appointment",
     "pluralName": "appointments",
-    "displayName": "Appointment"
+    "displayName": "Appointment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,21 @@
     },
     "end_time": {
       "type": "time"
+    },
+    "professor_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::professor.professor"
+    },
+    "student_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "service_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service"
     }
   }
 }

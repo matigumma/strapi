@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "professors",
+  "info": {
+    "singularName": "professor",
+    "pluralName": "professors",
+    "displayName": "Professor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "school_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::school.school"
+    }
+  }
+}
