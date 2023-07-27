@@ -4,7 +4,8 @@
   "info": {
     "singularName": "professor-invitation",
     "pluralName": "professor-invitations",
-    "displayName": "professor-invitation"
+    "displayName": "Professor-invitation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
