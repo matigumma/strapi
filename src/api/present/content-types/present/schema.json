@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presents",
+  "info": {
+    "singularName": "present",
+    "pluralName": "presents",
+    "displayName": "Present",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "professor_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::professor.professor"
+    },
+    "school_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::school.school"
+    },
+    "unavailable_days": {
+      "type": "json"
+    },
+    "missed_days": {
+      "type": "json"
+    }
+  }
+}

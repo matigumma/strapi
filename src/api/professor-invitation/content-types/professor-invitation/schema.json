@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "professor_invitations",
+  "info": {
+    "singularName": "professor-invitation",
+    "pluralName": "professor-invitations",
+    "displayName": "professor-invitation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "boolean"
+    },
+    "email": {
+      "type": "email"
+    },
+    "school_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::school.school"
+    },
+    "date": {
+      "type": "date"
+    },
+    "uuid": {
+      "type": "uid"
+    }
+  }
+}
